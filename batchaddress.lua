@@ -16,11 +16,11 @@ local db = io.read()
 
 function dbselect()
 	if db == "a" then
-		filename = "superbowl2021_production.csv" --file name
+		filename = "database2021_production.csv" --file name
 		elseif db == "b" then
-		filename = "superbowl2021_dev2.csv" --file name
+		filename = "database2021_dev2.csv" --file name
 		elseif db == "c" then
-		filename = "superbowl2021_dev_rnd.csv" --file name
+		filename = "database2021_dev_rnd.csv" --file name
 
 		else
 		print("no idea")
@@ -30,7 +30,7 @@ end
 filename = dbselect()
 print(filename)
 
---filename = "superbowl2021_dev.csv" --file name
+--filename = "database2021_dev.csv" --file name
 file = io.open (filename , a) --open file
 
 
